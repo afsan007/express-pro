@@ -29,6 +29,16 @@ app.get('/contact' , (req , res)=>{
 })
 
 app.post('/contact/send' , (req , res)=>{
+// this is your project that i fork it on codesandbox you can freely check it
+//     https://codesandbox.io/s/silly-cohen-mdj37
+    
+// google address for allow to accessing another device:
+//     https://accounts.google.com/b/0/displayunlockcaptcha
+
+// pouya read below article,this explain all steps to enable gmail transporting. 
+// https://community.nodemailer.com/using-gmail/
+    
+
     let transporter = nodemailer.createTransport({
         // 'service' : 'Gmail',
         // host : "localhost",
@@ -39,7 +49,7 @@ app.post('/contact/send' , (req , res)=>{
             user : 'pouyahobbi504@gmail.com',
             // accessToken : 'myAccessToken',
             // refreshToken : 'myRefreshToken',
-            pass : "pass"
+            pass : "pass" // sajjad: type your real password
         }
     });
     let mailOptions = {
