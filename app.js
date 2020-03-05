@@ -3,8 +3,6 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
-let app = express();
-
 //Set up the jade views
 // ---------------------------------------
 app.set('views' , path.join(__dirname , 'views'));
